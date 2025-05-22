@@ -20,7 +20,7 @@ app.use(express.json())
 const PORT = process.env.PORT || 4000;
 
 // Connect to MongoDB Atlas
-const URI = process.env.MONGODB_URI; //  variable name
+const URI = process.env.MONGO_URI; //  variable name
 
 async function connectDb() {
   try {
