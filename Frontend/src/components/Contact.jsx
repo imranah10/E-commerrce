@@ -1,17 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 function Contact() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-10 dark:text-white">
-      {/* Centered Back Button */}
-      <div className="flex justify-center mb-6">
-        <Link to="/">
-          <button className="bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
-            Back
-          </button>
-        </Link>
-      </div>
+    <div>
+        <Navbar/>
+        <div className="max-w-4xl mx-auto px-4 py-10 dark:text-white mt-16">
 
       <h1 className="text-4xl font-bold mb-6 text-center">Contact Us</h1>
 
@@ -55,6 +50,7 @@ function Contact() {
           Send Message
         </button>
       </form>
+    </div>
     </div>
   );
 }
