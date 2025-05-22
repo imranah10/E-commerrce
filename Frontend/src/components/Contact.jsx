@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function Contact() {
   return (
@@ -51,6 +52,7 @@ function Contact() {
         </button>
       </form>
     </div>
+    <Footer/>
     </div>
   );
 }
