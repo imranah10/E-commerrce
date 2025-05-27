@@ -11,7 +11,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://e-commerrce-6ocm.vercel.app'
+    'https://e-commerrce-6ocm.vercel.app',"https://e-commerrce-4.onrender.com"
   ],
   credentials: true
 }));
