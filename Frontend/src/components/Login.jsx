@@ -22,7 +22,7 @@ function Login() {
     };
 
     try {
-      const res = await axios.post("https://e-commerrce-4.onrender.com/user/login", userInfo);
+      const res = await axios.post("https://e-commerrce.onrender.com/user/login", userInfo);
       if (res.data && res.data.user) {
         localStorage.setItem("Users", JSON.stringify(res.data.user));
         setAuthUser(res.data.user);
