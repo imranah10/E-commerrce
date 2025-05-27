@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 import bookroute from './route/book.route.js';
 import userroute from './route/user.route.js';
 import cors from 'cors'
+import connectDB from './Config/Db.js';
 
 
 dotenv.config();
@@ -31,7 +32,7 @@ async function connectDb() {
   }
 }
 
-connectDb();
+connectDB();
 
 // defining routes 
 app.use('/book',bookroute);
